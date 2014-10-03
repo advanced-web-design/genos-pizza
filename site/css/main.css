@@ -24,6 +24,9 @@ html {
     line-height: 1.4;
 }
 
+img {
+    max-width: 100%;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -69,12 +72,29 @@ fieldset {
 
 /* !!! place all of your custom styles here !!! */
 
+html {
+  box-sizing: border-box;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
+.wrap {
+  max-width: 1000px; 
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
+.page-header {
+    background-color: #990100;
+    color: white;
+}
 
-
-
+.main-nav {
+    background-color:#f42513;
+    margin-top:-10px;
+}
 
 
 
