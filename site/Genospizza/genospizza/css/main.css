@@ -1,0 +1,433 @@
+/*! Advanced Web Design Starter CSS
+ *! Based on HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/* !!! place all of your custom styles here !!! */
+
+/* ==========================================================================
+    images
+   ========================================================================== */
+
+img {
+ max-width: 100%;   
+}
+
+.pictures {
+	width:300px;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.pictures img {
+    border: 1px solid orange;
+}
+
+#fixpics{
+    width:600px;
+    margin: 40px auto;
+    
+}
+
+#fixaboutpic{
+    width:125px;
+}
+
+.orderpicture {
+ width: 250px;
+ display: inline-block;
+ margin-right: -4px;
+ float: right;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrap {
+  max-width: 1000px; 
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.col {
+  display: inline-block;
+  margin-right: -4px;
+}
+
+/* header styles */
+
+.page-header {
+  background: #E8602B;
+  color: #eee;
+  padding: 20px 0;
+}
+
+.logo {
+  max-width: 33%;
+}
+
+.main-nav {
+  width: 77%;
+}
+
+/* navigation */
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-left: 26px;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+.nav-list a {
+  font-family: Futura, sans-serif;
+  font-weight: medium;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-decoration: none;
+  transition: all 0.1s linear;
+}
+
+.nav-list a:link,
+.nav-list a:visited {
+  color: #eee;
+}
+
+.nav-list a:hover,
+.nav-list a:active,
+.nav-list a:focus {
+  opacity: .5;
+  border-bottom: 3px solid #eee;
+}
+
+/* image lead */
+
+.image-lead {
+  text-align: center; 
+}
+
+/* main content area */
+
+@media (min-width 720px) {
+    .content-column {
+    width: 33.33333333%;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+}
+
+
+.content-column {
+  width: 33%;
+  vertical-align: top;
+  padding-left: 30px;
+  padding-right: 20px;  
+  width:250px;
+  display: inline-block;
+  margin-left: -4px;
+}
+
+
+.content-column:first-child {
+  padding-left: 30;
+}
+
+.content-column:last-child {
+  padding-right: 0;
+}
+
+@media (max-width 720px) {
+    .content-column {
+    width: 100%;
+    border-bottom:  1 px solid #6c0;     
+        
+}
+}
+    
+
+.section-icon {
+    font-size: 32px;
+    text-align: center;
+    color: #FF8C3C;
+    border: 1px solid #FF8C3C;
+    border-radius: 50%;
+    max-width: 50px;
+    height:60 px;
+    padding: 6px;
+    margin: 0 auto;    
+}
+
+.genospizza {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    float:left;
+    margin: 0 auto;  
+}
+
+.slogan { 
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 30px;
+    float: left;
+    margin:0 auto;
+    display: block;
+}
+
+.mains {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    float:left;
+    font-style: italic;
+}
+
+.hours {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    float: right;
+    font-style: italic;
+}
+
+.number{
+     font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    float: right;
+    font-style: italic;    
+    line-height: 20%;
+}
+
+.orderpictures {
+ float: right;
+}
+
+#fixcolumn{
+    width:1300px;
+    margin: 30px auto;
+}
+
+h2 {
+ text-align: center;   
+}
+
+.site-footer {
+ text-align: center;   
+}
+
+.pizzamenu {
+    width:3300px;
+    margin: 0px 30px;
+    text-align: 40%;
+}
+
+.menu{
+    margin: 150px; 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
