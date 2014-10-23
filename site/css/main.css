@@ -1,160 +1,296 @@
-/*! Advanced Web Design Starter CSS
- *! Based on HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* =======================================
+    style.css
+    use this file for your custom styles
+========================================== */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+/* use a box model that makes sense */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* set the default color, font-size, and line height */
 html {
-    font-size: 1em;
-    line-height: 1.4;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-
-audio,
-canvas,
+/* make images and embedded media fluid */
 img,
-video {
-    vertical-align: middle;
+object {
+  max-width: 100%;
 }
 
-/*
- * Remove default fieldset styles.
- */
+/* type hierarchy- change for your project */
+h1 {
+  font-size: 3em; /* 48px */
+}
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+h2 {
+  font-size: 2.25em /* 36px */
+}
+
+h3 {
+  font-size: 1.75em /* 28px */
+}
+
+h4 {
+  font-size: 1.125em /*18px */
+}
+
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+.nav-list {
+    padding: 10px;
+    margin: 0;/*remove the list indent*/
+}
+
+.nav-list li {
+  list-style: none; /*remove list style*/
+  display: inline; /*display list left to right*/
+  padding-right: 20px; /*add space between items*/
+}
+
+.nav-list li:last-child { /*select only the last li*/
+  padding-right: 0; /*remove padding from this li*/
 }
 
 
-/* ==========================================================================
-   Custom styles
-   ========================================================================== */
 
-/* !!! place all of your custom styles here !!! */
+/*link*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+.nav-list a {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 27px;
+    text-decoration: none;
+    transition: all 0.1s linear;
+    padding-right: 35px;
+    padding-left: 35px;
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+a:visited {
+    color: black;
+    text-decoration: none;
 }
 
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
+.nav-list a:hover,
+.nav-list a:active,
+.nav-list a:focus {
+  color: #555BBD;
 }
 
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+body {
+    font-family: Futura;
+    line-height: 1.4;
+    background-color: #fff;
+  
+  
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+.wrap, .footerwrap {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-top: 5px;
 }
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+.footerwrap{
+    border-top: 1px solid #000;
+    max-width: 800px;
 }
+ p, h2, h3, h4, td {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+table, td {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.align {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+nav {
+    background: white;
+    padding: 0px;
+   
+}
+
+
+
+/*Random*/
+
+
+.info {
+    text-align: center;
+}
+
+.tiny {
+    font-size: 14px;
+    font-style: italic;
+}
+
+    
+
+
+/*Responsive Design*/
+
+
+
+@media (min-width: 800px) {
+    
+
+    .column {
+        float: left;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    
+    
+    .column.full {
+        width: 100%;
+    }
+    
+    .column.two-thirds {
+        width:66.7%;
+    }
+    
+    .column.onehalf {
+        width: 25%;
+    }
+    
+    .column.twohalf {
+        width: 75%
+            }
+    
+    .column.third {
+        width: 33.3%;
+    }
+    
+    .column.fourth {
+        width: 24.95%;
+    }
+    
+    .column.flow-opposite {
+        float: right;
+    }
+}
+
+/*text align image*/
+
+
+
+img {
+    text-align: center;
+}
+
+.footer {
+    font-family: 'Amatic SC', cursive;
+}
+
+.GP {
+    letter-spacing: 10px;
+    font-family: 'Amatic SC', cursive;
+    color: #353C42;
+    font-size: 2em;
+    
+    
+    
+}
+
+.sec-img {
+    border-top: 1px solid #000;
+}
+
+.container { 
+    width: 100%; 
+    max-width: 1280px; 
+    min-width: 320px; 
+    margin: 0 auto; 
+    clear: both;
+    
+}
+
+.border {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    width: 800px;
+    margin: 0 auto;
+    
+}
+
+
+
+.subtitle {
+  margin: 0 0 2em 0;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.amp {
+  margin: 0 0 0.25em 0;
+}
+.amp span {
+  font-size: 0.7em;
+}
+
+
+
+
+
+
+
+/* =======================================
+    helper classes
+    keep this at the bottom
+========================================== */
 
 /*
  * Clearfix: contain floats
+ *
+ * from HTML5 Boilerplate
+ * shttps://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
  *
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -167,36 +303,10 @@ fieldset {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  clear: both;
 }
