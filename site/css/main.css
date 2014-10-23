@@ -69,16 +69,142 @@ fieldset {
 
 /* !!! place all of your custom styles here !!! */
 
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.wrap {
+max-width: 1000px;
+padding: 0 20px;
+margin: 0 auto;
+}
+
+.col {
+display: inline-block;
+margin-right: -4px;
+}
+    
+/* header styles */
+
+.page-header {
+background-color: white;
+padding: 0px;
+background-repeat: no-repeat
+}
+
+.logo {
+width: 64%;
+background-image: url(../img/LOGO.jpg);
+background-repeat: no-repeat;
+display:inline-flex;
+margin-left: -4px;
+margin-bottom: 20p;
+}
+
+.main-nav {
+}
+
+body {
+background-image: url(../img/background2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+img {
+max-width: 100%;
+}
+
+
+/* nav menu */
+.nav-list {
+list-style: none;
+text-align: right;
+}
+
+.nav-list li {
+display: inline-block;
+margin-left: 16px;
+}
+
+.nav-list li:first-child {
+margin-left: 0;
+}    
+
+.nav-list a {
+font-family: Futura, sans-serif;
+font-weight: medium;
+text-transform: uppercase;
+font-size: 22px;
+color: #FF6000;
+text-decoration: none;
+transition: all 0.5s linear;
+}
+
+.nav-list a:link,
+.nav-list a:visited {
+}
+
+
+.nav-list a:hover,
+.nav-list a:active,
+.nav-list a:focus {
+opacity: .3;
+border-bottom: 3px solid #eee;
+}
+
+/* image lead */
 
 
 
+/* main content column */
 
+.content-column {
+width: 39.333%;
+vertical-align: top;
+padding-left: 20px;
+padding-right: 20px;
+}
 
+.content-column:first-child {
+padding-left: 0;
+padding-right: 0px;
+}
 
+.content-column:last-child {
+padding-right: 0;
+padding-left: 40px;
+}
 
+.aboutus {
+font-size: 20px;
+color: white;
+font-family: monospace;
+margin-top: -30px
+}
 
+h2 {
+font-size: 40px;
+color: white;
+font-family: monospace;
+}
 
+@media (max-width: 720px) {
+.content-column {
+width: 100%;
+border-bottom: 1px solid #6c7a89;
+ }
+}
 
+.footer {
+text-align: right;
+padding-left: 10px;
+padding-top: 170px;
+color: orange;
+}
 
 
 
