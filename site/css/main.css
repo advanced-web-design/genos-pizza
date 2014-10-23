@@ -22,8 +22,12 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Droid Sans', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -69,19 +73,902 @@ fieldset {
 
 /* !!! place all of your custom styles here !!! */
 
+html {
+  box-sizing: border-box;
+}
+
+/*
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}/* needed for sticky footer  */
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrap {
+  max-width: 1000px; 
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.col {
+  display: inline-block;
+  margin-right: -4px;
+}
+
+/* header */
+
+.page-header {
+    background-color: #b80301;
+    color: white;
+    height: 230px;
+}
+
+
+.logo-icon,
+.address-phone,
+.info-hours{
+    display:inline-block;
+    width: 33%;
+    margin-left:-4px;/* needed for inline-block */
+    vertical-align:top;
+    padding-top: 40px;
+    
+} 
+.logo-icon img {
+    max-width: 105%;
+    margin-left: -15px;
+    margin-top: 11px;
+}
+
+.address-phone p{
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.address {
+    line-height: .5;
+}
+
+.phone a:link, a:visited {
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+}
+
+.phone a:hover, a:active {
+    color:#f42513; /* reverses link colors */
+    background: white;
+}
+    
+
+}
+.info-hours p{
+
+}
+
+.open {
+    font-size: 1.5em;
+    line-height: .8;
+    text-align: right;
+    letter-spacing: 1.2px;
+}
+
+.free-delivery {
+    letter-spacing: 3px;    
+    text-align: right;
+    font-size: 1.8em;
+}
+
+
+
+/* header responsive */
+
+@media (min-width: 700px) {    
+  
+ }
+
+
+@media (max-width: 700px){
+    .page-header{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .logo-icon {
+        width: 70%;
+        text-align:center;
+        margin-left: 60px;
+        margin-top: -30px;
+    }
+    
+    .address-phone {
+        width: 100%;
+        margin-top: -35px;
+        font-size: 1.3em;
+        line-height: .2;
+    }
+    
+    .info-hours {
+        width: 100%;
+        margin-top: -40px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .address-phone p,
+    .info-hours p,
+    .free-delivery {      
+        font-size: 1em;
+        text-align: center;
+        line-height: .3;
+        
+    }
+   
+    
+}
+
+/* navigation */
+
+
+.main-nav {
+    background-color:#f42513;
+    margin-top:0px;
+    
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 80px;
+    line-height: 3.5;
+    
+    
+}
+
+.nav-list li:first-child {
+  margin-left: -30px;
+}
+
+.nav-list a {
+    font-family: 'Droid Sans', sans-serif;
+    color: white;
+    font-weight:400;
+    font-size: 1.6em;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  
+    
+}
+.order-online {
+    border: 2px solid white;
+}
+
+
+.nav-list a:link,
+.nav-list a:visited {
+    color: white,
+    border: 2px solid white;
+    padding: 7px;
+    
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+    color:#f42513; /* reverses link colors */
+    background: white;
+    
+}
+
+
+
+/* responsible CSS */
+
+
+@media (min-width: 700px) {    
+  
+ }
+
+
+@media (max-width: 700px) { 
+    
+    nav, p, li {
+        font-size: .8em;
+    } 
+    .main-nav {
+       height: 143px; 
+    }
+    .nav-list {
+        height: 138px;
+        max-width: 100%;
+        margin: 0 auto;  
+        background: #b80301;
+        
+    }
+    .nav-list li {
+        list-style: none; /*remove list style*/
+        display: block; /*display list stacked*/
+        background-color:#f42513;
+        text-align: center;
+        height: 25px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 0px;
+        margin-bottom: 3px;
+        font-size: .6em;
+        line-height: 2;
+        
+     }
+    
+    .nav-list li:first-child { /*select only the first li*/
+        margin-left: 0px;
+    }
+
+    .nav-list a:link,
+    .nav-list a:visited {
+        color: white,
+        border: 2px solid white;
+        padding: 1.6px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 3px;
+        line-height: 2.3;
+
+    }
+    
+   
+    
+}
+
+/* main content */
+
+
+
+/*
+.main-content {
+    flex: 1;
+}/* needed for sticky footer */
+
+.about-content p{
+    font-family: 'Droid Sans', sans-serif;
+
+}
+.about-content {
+    width: 100%;
+    background-color: rgba(242,241,239,0.7);/* to make ONLY color transluscent but not the images or text */
+    margin-top: -21px;
+}
+
+
+.page-title {
+    padding-top: 40px;
+    padding-left: 60px;
+    color: #f42513;
+    margin-bottom: -20px;
+}
+
+
+.about-text {
+    padding-left: 65px;
+    margin-top: -10px;
+    line-height: 2.35;
+}
+    
+.about-image {
+    padding-right: 30px;
+    padding-left: 20px;
+    
+}   
+
+
+.about-text,
+.about-image {
+    display:inline-block;
+    width: 50%;
+    margin-left:-4px;/* needed for inline-block */
+    vertical-align:top;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    
+} 
+.order-content {
+    width: 100%;
+    background-color: rgba(242,241,239,0.7);/* to make ONLY color transluscent but not the images or text */
+    margin-top: -21px;
+    min-height:800px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.subtitle {
+    padding-top: 30px;
+    padding-left: 60px;
+    font-weight: 700;
+}
+.pizza-type {
+    background-color: white;
+    width: 21.5%;
+    display: inline-block;
+    margin-left:-4px;/* needed for inline-block */
+    vertical-align:top;
+    margin-left: 60px;
+    margin-right: -55px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.pizza-type h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    color: black;
+}
+
+.pizza-description {
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 17px;
+    font-size: .9em;
+    margin-top: -20px; 
+}
+
+.pizza-size {
+    text-align: center;
+    width:50%;
+    font-size: .7em;
+    display: inline-block;
+    margin-left:-3px;/* needed for inline-block */
+    margin-top: -20px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    
+}
+
+.price {
+    text-align: center;
+    width:50%;
+    display: inline-block;
+    margin-left:-3px;/* needed for inline-block */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    
+}
+
+.add-to-order {
+    text-align: center;
+    width:50%;
+    display: inline-block;
+    margin-left:-3px;/* needed for inline-block */
+    margin-top: -10px;
+    font-size: .8em;
+
+}
+
+
+.pizza-type a {
+    color: black;
+    font-size: .75em;
+    transition: all 0.3s linear;
+    text-decoration: none;
+    width: 80px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.pizza-type a:link,
+.pizza-type a:visited {
+    color: black;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+
+.pizza-type a:hover,
+.pizza-type a:active {
+    color:white; /* reverses link colors */
+    background: black;
+}
+
+
+.extra-toppings,
+.order-information {
+    display: inline-block;
+    vertical-align: top;
+    margin-left:50px;/* needed for inline-block */
+    margin-right: -20px;
+   
+}
+
+.extra-toppings-title {
+    margin-left: 50px;
+    margin-bottom:5px;
+}
+
+.extra-toppings {
+    background: white;
+    width: 40%;
+}
+
+.order-information {
+    width: 40%;
+}    
+
+.add-list-01,
+.topping-list-01,
+.add-list-02,
+.topping-list-02 {
+    display: inline-block;
+    list-style: none;
+    width: 20%;
+    line-height: 2;
+    vertical-align: top;
+    margin-left:-15px;/* needed for inline-block */
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.add-list-01,
+.add-list-02 {
+    font-size: 1em;
+}
+
+.topping-list-01,
+.topping-list-02 {
+    padding-left: 4px;
+}
+
+
+
+.add-list-01 a,
+.add-list-02 a{
+    color: black;
+    transition: all 0.3s linear;
+    width: 80px;
+    text-decoration: none;
+}
+
+
+.add-list-01 a:link,
+.add-list-01 a:visited,
+.add-list-02 a:link,
+.add-list-02 a:visited{
+    padding: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid black;
+}
+
+.add-list-01 a:hover,
+.add-list-01 a:active,
+.add-list-02 a:hover,
+.add-list-02 a:active {
+    color:white; /* reverses link colors */
+    background: black;
+}
+
+.add-item {
+    font-size: .8em;
+
+}
+
+
+.topping-item {
+    font-size: .8em;
+    line-height: 2;
+    
+    
+}
+
+.topping-item-long {
+    font-size: .8em;
+    margin-right:-70px; /* to fit fresh mozarella in one line */
+    
+}
+
+
+.extra-toppings-title, 
+.order-info-title {
+    vertical-align:top;
+}
+
+.order-info-title {
+    text-align:center;
+    margin-bottom:5px;
+    margin-top:-26px;
+
+}
+
+.info-list,
+.info-list-blank {
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+    margin-left:-4px;/* needed for inline-block */
+    margin-right: 5px;
+}
+
+
+.info-list {
+    list-style: none;
+    margin-top: 0px;
+    width: 34%;
+    margin-left: -4px;
+     
+}
+.info-list-blank {
+    height: 160px;
+    width: 73%;
+    margin-right: -30px;
+} 
+
+
+.info-item {
+    font-size: .8em;
+    line-height: 2;
+    margin-bottom: 6px;
+    text-align: right;
+
+}
+.info-blank {
+    background: white;
+    text-align: left;
+    height: 25px;
+    margin-bottom:7px;
+}
+
+
+/* 
+.image-lead img {
+    width: 100%; 
+    position: absolute; 
+    left: 0px;
+    top: 320px;
+    z-index: -1; 
+} 
+*/
+
+
+.background-image {
+    width:100%;
+    min-height:800px;
+    background: url("../img/image_used_pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*  main-content responsive  */
+
+
+@media (min-width: 700px) {    
+  
+ }
+
+@media (min-width: 40rem) /* these attributes will work on a screen that is at LEAST 40rem  or wider */ {
+  
+    .column {
+        float: left;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .column.full {
+        width: 100%;
+    }
+    .column.two-thirds {
+        width: 66.7%;
+    }
+    .column.half {
+        width: 50%;
+    }
+    .column.third {
+        width: 33.3%;
+    }
+    .column.fourth {
+        width: 24.95%;
+    }
+    .column.flow-opposite {
+        float: right;
+    }
+}
+
+
+@media (max-width: 700px) { 
+    
+    
+     p, li {
+        font-size: .8em;
+        font-family: 'Droid Sans', sans-serif;
+    }       
+
+    
+    
+
+  .index-image {
+        margin-top:-5px;
+        margin-bottom:-535px;
+      
+        
+    }
+
+    
+     .about-content background-image {
+        background-image: none;
+        height:0px;
+    }
+    
+    
+    .about-content {
+        width: 410px;
+        margin-top: -20px;
+        background-color: #dedcd1;
+        margin-left: -20px;
+        
+    }
+    
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+        padding-right: 60px;
+
+    }
+    
+    .subtitle  {
+        margin-top: -10px;
+        font-size: 1.5em;
+        text-align: center;
+        padding-right: 60px;
+    }
+    
+    
+    .about-text, 
+    .about-image {
+        display: block;
+        width: 100%;
+
+    }
+    
+    .about-image {
+        margin-left:4px;
+        padding: 30px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+    
+    
+
+    
+    .about-text {
+        font-size: .9em;
+        line-height: 1.7;
+        margin-left:-30px;
+        margin-right: 70px;
+        margin-bottom: -30px;
+        text-align: justify;
+    }
+
+    .about-content :last-child { /*select only the first li*/
+        margin-bottom: 0px;
+    }
+
+    
+    .order-content {
+        width: 410px;
+        margin-left: -20px;
+        background-color: #dedcd1;
+        padding: 25px;
+        padding-top:0px;
+    }
+    
+    .pizza-type {
+        display: block;
+        width: 70%;
+        margin-right: 60px;
+        padding: 1px;
+    }
+    
+    
+    .add-to-order {
+        width:100%;
+        display: inline-block;
+        margin-top: -10px;
+        font-size: .4em;
+        margin: 0 auto;
+    }
+    
+    
+    h4 {
+        display:block;
+        width:100%;
+    }
+    
+    .extra-toppings-title {
+        text-align:center;
+        margin-left: 10px;
+    
+    }
+    
+    .order-info-title {
+        margin-top:10px;
+        margin-left: 40px;
+    }
+    
+    
+    
+    .extra-toppings,
+    .order-information {
+        display:block;
+        width:100%;
+  
+    }
+    
+    .extra-toppings {
+        margin:0 auto;
+        width: 94%;
+        font-family: 'Droid Sans', sans-serif;
+    }
+    
+   .extra-toppings li {
+        font-size: .6em;
+        margin-left:-5px;
+        line-height:2.4;
+    } 
+    
+    .topping-item-long {
+        font-size: .8em;
+        margin-right:-40px; /* to fit fresh mozarella in one line */
+    
+    }
+    
+    
+    .add-list-01, .topping-list-01 {
+        margin-right:20px;
+        
+    }
+    
+    .add-list-02, .topping-list-02 {
+        margin-right:20px;
+        
+    }
+    
+    .add-list-02 {
+        margin-left: -20px;
+    }
+
+    .topping-list-02 {
+        padding-right:0px;
+    }
+
+    .order-information {
+        width:90%;
+        margin-left: -5px;
+        margin-top: 10px;
+        margin-right: 0px;
+
+
+    }
+    
+    .order-information li {
+        font-size:.75em;
+        line-height: 2.2;
+        margin-left: -25px;
+    }
+    
+    
+    
+    
+    
+}
 
 
 
 
 
 
+/* footer */
+
+.site-footer {
+    background-color: #b80301;
+    margin: 0 auto;
+    color: white;
+
+}
+
+.footer-info,
+.social-media {
+    display:inline-block;
+
+    margin-left:-4px;/* needed for inline-block */
+    vertical-align: top;
+}
+
+.footer-info {
+    width: 85%;
+
+}
+.footer-info p {
+    text-align: center;
+    font-size: .9em;
+    line-height: 5px;
+    margin-left: 20px;
+}
+
+
+.social-media {
+    text-align: left;
+    padding-top: 10px;
+    width: 15%;
+
+}
+
+.social-media i {
+    color: blue;
+    background: white;
+    font-size: 32px;
+    margin-right: 10px; 
+}
+
+.social-media a:link, 
+.social-media a:active {
+    text-decoration: none;
+    color: white;
+}    
 
 
 
+/* responsible footer */
 
 
+@media (min-width: 700px) {    
+  
+ }
 
+@media (max-width: 700px) {
+    
+    .site-footer{
+        width: 100%;
+        font-size: .8em;
+    }
 
+    .footer-info {
+        margin-left:25px;
+    }
+    
+    
+    .social-media {
+        width: 100%;    
+        padding-left: 130px;
+        padding-bottom: 10px;
+    }
+    
+    .social-media i {
+        display: inline;
+        
+    }
+
+    
+}   
 
 /* ==========================================================================
    Helper classes
