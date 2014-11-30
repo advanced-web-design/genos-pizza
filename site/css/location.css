@@ -1,0 +1,341 @@
+audio, canvas, img, video {
+    vertical-align: middle;
+  }
+
+  html, button, input, select, textarea {
+    color: #222;
+  }
+
+  body{
+    background-image: url("../img/wood2.jpg");
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+    ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
+  .clearfix:before, .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .clearfix {
+    *zoom: 1;
+  }
+
+  .hidden {
+    display: none !important;
+    visibility: hidden;
+  }
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+  }
+
+  .ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+/* start body here*/
+
+  html{
+    box-sizing: border-box;
+  }
+
+  .logo{
+    top: -3%;
+    height: 10%;
+
+  }
+
+  .rollingpin{
+    position:relative;
+    z-index: 1;
+    margin-top: -3%;
+    margin-left: 20%;
+    max-width: 60%;
+
+  }
+
+  .address{
+    font-family: 'Special Elite', cursive;
+    font-size: 12px;
+    color: #eee;
+    margin-top: -15%;
+    margin-left: 20%;
+  }
+
+  .order{
+    font-family: 'Special Elite', cursive;
+    /*position:relative;
+    z-index: 1;*/
+    font-size: 56px;
+    padding-top: -70%;
+
+
+     }
+
+  /*bubbles need to fix*/
+  .section-icon{
+  font-size: 60px;
+  text-align: center;
+  color: #EB9532;
+  background-color: #FDE3A7;
+  opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+  border: 10px solid #EB9532;
+  border-radius: 50%;
+  max-width: 60px;
+  height: 60px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  line-height: 60px;
+  transition: all 0.2s linear;
+}
+
+.chev{
+  margin-left: 5%;
+  max-width: 3.5%;
+  margin-top: -49%;
+}
+
+.menu-words{
+  font-family: 'Special Elite', cursive;
+  font-size: 24px;
+  margin-top: 1%;
+  margin-left: 17.5%;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.google{
+  position:relative;
+  z-index:1;
+  margin-top: 35%;
+  margin-left: 22%;
+ }
+
+.pic{
+  max-height: 10%;
+  max-width: 15%;
+  position:relative;
+  z-index: 1;
+  margin-top: -49%;
+  margin-left: 5%;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+
+}
+
+.roll{
+  max-height: 20%;
+  max-width: 15%;
+  position:relative;
+  z-index: 1;
+  margin-top: -20%;
+  margin-left: -11%;
+  -ms-transform: rotate(8deg); /* IE 9 */
+  -webkit-transform: rotate(8deg); /* Chrome, Safari, Opera */
+  transform: rotate( 8deg);
+}
+ /*.box{
+   border-radius: 0%;
+  border: 10px solid #EB9532;
+  max-width: 54.3%;*/
+
+
+
+/*end of bubbles*/
+
+
+  .nav-list a:link,
+  .nav-list a:visited {
+    color: #26A65B;
+    text-decoration: none;
+  }
+
+  .nav-list a:hover,
+  .nav-list a:active,
+  .nav-list a:focus{
+    opacity: .2;
+  }
+
+  .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+
+
+
+
+  /* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+
+  @media print,
+  (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+
+
+
+.chefhat2{
+  position: absolute;
+  top: 1435px;
+  left: 660px;
+  z-index: 1;
+  height: 7%;
+  width: 4%;
+}
+
+.footer{
+  border: 12px double burlywood;
+  background-color: bisque;
+  border-radius: 5px;
+  width: 1700px;
+  height: 200px;
+  align-content: center;
+  margin: 7%;
+  position: absolute;
+  top: 1300px;
+  right: -90px;
+}
+
+.footerlogo{
+  font-family: 'Special Elite', cursive;
+  font-size: 90px;
+  position: absolute;
+  top:1350px;
+  left: 500px;
+  z-index: 0;
+}
+
+.footerlogo1{
+  font-family: 'Special Elite', cursive;
+  font-size: 70px;
+  position: absolute;
+  top:1440px;
+  left: 550px;
+  z-index: 0;
+}
+
+/*hidden begins here*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+  /* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+
+  @media print,
+  (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
