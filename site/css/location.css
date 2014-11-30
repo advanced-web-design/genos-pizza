@@ -107,11 +107,11 @@ audio, canvas, img, video {
 
   .order{
     font-family: 'Special Elite', cursive;
-    position:relative;
-    z-index: 1;
+    /*position:relative;
+    z-index: 1;*/
     font-size: 56px;
-    margin-top: 0%;
-    margin-left: 39%;
+    padding-top: -70%;
+
 
      }
 
